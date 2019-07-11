@@ -1,21 +1,201 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<app-navbar></app-navbar>
 
-<router-outlet></router-outlet>
+<div class="main-container">
+  <!-- Profile background large image -->
+  <div class="row profile-background">
+    <div class="container">
+	  <!-- User main avatar -->
+      <div class="avatar-container">
+        <div class="avatar">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-navbar-perfil></app-navbar-perfil>
+
+  <div class="container main-content">
+    <div class="row">
+      
+      <div class="col profile-col">
+        <app-columna-perfil></app-columna-perfil>
+      </div>
+      
+      <!-- Center content column -->
+      <div class="col-6">
+        <ol class="tweet-list">
+          <li class="tweet-card">
+            <div class="tweet-content">
+              <div class="tweet-header">
+                <span class="fullname">
+                  <strong>Jon Vadillo</strong>
+                </span>
+                <span class="username">@JonVadillo</span>
+                <span class="tweet-time">- Jul 18</span>
+              </div>
+              <a>
+                <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+              </a>
+              <div class="tweet-text">
+                <p class="" lang="es" data-aria-label-part="0">¡Nuevo artículo en Mozilla!<br>Resuelto: Corregido – Una breve historia sobre un error reportado por la comunidad <a href="https://t.co/dqg5hVQXA0" class="twitter-timeline-link" target="_blank"><span class="">https://www.mozilla-hispano.org/</span></a>                  <a href="" class="twitter-hashtag"><s>#</s><b>firefox</b></a> <a href="" class="twitter-hashtag"><s>#</s><b>comunidad</b></a>
+                  <a href="" class="twitter-hashtag" dir="ltr"></a>
+                </p>
+              </div>
+              <div class="tweet-footer">
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-comment" aria-hidden="true"></i><span> 18</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-sync" aria-hidden="true"></i><span> 64</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-heart" aria-hidden="true"></i><span> 202</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-mail" aria-hidden="true"></i><span> 155</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="tweet-card">
+            <div class="tweet-content">
+              <div class="tweet-header">
+                <span class="fullname">
+                  <strong>Jon Vadillo</strong>
+                </span>
+                <span class="username">@JonVadillo</span>
+                <span class="tweet-time">- Jul 18</span>
+              </div>
+              <a>
+                <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+              </a>
+              <div class="tweet-text">
+                <p class="" lang="es" data-aria-label-part="0">¡Nuevo artículo en Mozilla!<br>Resuelto: Corregido – Una breve historia sobre un error reportado por la comunidad <a href="https://t.co/dqg5hVQXA0" class="twitter-timeline-link" target="_blank"><span class="">https://www.mozilla-hispano.org/</span></a>                  <a href="" class="twitter-hashtag"><s>#</s><b>firefox</b></a> <a href="" class="twitter-hashtag"><s>#</s><b>comunidad</b></a>
+                  <a href="" class="twitter-hashtag" dir="ltr"></a>
+                </p>
+              </div>
+              <div class="tweet-footer">
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-comment" aria-hidden="true"></i><span> 18</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-sync" aria-hidden="true"></i><span> 64</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-heart" aria-hidden="true"></i><span> 202</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-mail" aria-hidden="true"></i><span> 155</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="tweet-card">
+            <div class="tweet-content">
+              <div class="tweet-header">
+                <span class="fullname">
+                  <strong>Jon Vadillo</strong>
+                </span>
+                <span class="username">@JonVadillo</span>
+                <span class="tweet-time">- Jul 18</span>
+              </div>
+              <a>
+                <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+              </a>
+              <div class="tweet-text">
+                <p class="" lang="es" data-aria-label-part="0">¡Nuevo artículo en Mozilla!<br>Resuelto: Corregido – Una breve historia sobre un error reportado por la comunidad <a href="https://t.co/dqg5hVQXA0" class="twitter-timeline-link" target="_blank"><span class="">https://www.mozilla-hispano.org/</span></a>                  <a href="" class="twitter-hashtag"><s>#</s><b>firefox</b></a> <a href="" class="twitter-hashtag"><s>#</s><b>comunidad</b></a>
+                  <a href="" class="twitter-hashtag" dir="ltr"></a>
+                </p>
+              </div>
+              <div class="tweet-footer">
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-comment" aria-hidden="true"></i><span> 18</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-sync" aria-hidden="true"></i><span> 64</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-heart" aria-hidden="true"></i><span> 202</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-mail" aria-hidden="true"></i><span> 155</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="tweet-card">
+            <div class="tweet-content">
+              <div class="tweet-header">
+                <span class="fullname">
+                  <strong>Jon Vadillo</strong>
+                </span>
+                <span class="username">@JonVadillo</span>
+                <span class="tweet-time">- Jul 18</span>
+              </div>
+              <a>
+                <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+              </a>
+              <div class="tweet-text">
+                <p class="" lang="es" data-aria-label-part="0">¡Nuevo artículo en Mozilla!<br>Resuelto: Corregido – Una breve historia sobre un error reportado por la comunidad <a href="https://t.co/dqg5hVQXA0" class="twitter-timeline-link" target="_blank"><span class="">https://www.mozilla-hispano.org/</span></a>                  <a href="" class="twitter-hashtag"><s>#</s><b>firefox</b></a> <a href="" class="twitter-hashtag"><s>#</s><b>comunidad</b></a>
+                  <a href="" class="twitter-hashtag" dir="ltr"></a>
+                </p>
+              </div>
+              <div class="tweet-footer">
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-comment" aria-hidden="true"></i><span> 18</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-sync" aria-hidden="true"></i><span> 64</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-heart" aria-hidden="true"></i><span> 202</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-mail" aria-hidden="true"></i><span> 155</span>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="tweet-card">
+            <div class="tweet-content">
+              <div class="tweet-header">
+                <span class="fullname">
+                  <strong>Jon Vadillo</strong>
+                </span>
+                <span class="username">@JonVadillo</span>
+                <span class="tweet-time">- Jul 18</span>
+              </div>
+              <a>
+                <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
+              </a>
+              <div class="tweet-text">
+                <p class="" lang="es" data-aria-label-part="0">¡Nuevo artículo en Mozilla!<br>Resuelto: Corregido – Una breve historia sobre un error reportado por la comunidad <a href="https://t.co/dqg5hVQXA0" class="twitter-timeline-link" target="_blank"><span class="">https://www.mozilla-hispano.org/</span></a>                  <a href="" class="twitter-hashtag"><s>#</s><b>firefox</b></a> <a href="" class="twitter-hashtag"><s>#</s><b>comunidad</b></a>
+                  <a href="" class="twitter-hashtag" dir="ltr"></a>
+                </p>
+              </div>
+              <div class="tweet-footer">
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-comment" aria-hidden="true"></i><span> 18</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-sync" aria-hidden="true"></i><span> 64</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-heart" aria-hidden="true"></i><span> 202</span>
+                </a>
+                <a class="tweet-footer-btn">
+                  <i class="octicon octicon-mail" aria-hidden="true"></i><span> 155</span>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ol>
+        <!-- End: tweet list -->
+      </div>
+      <!-- End: Center content column -->
+      <div class="col right-col">
+        <app-columna-recomendaciones></app-columna-recomendaciones>
+      </div>
+    </div>
+  </div>
