@@ -1,49 +1,11 @@
 <div class="content-panel">
     <div class="panel-header">
-      <h4>Who to follow</h4><small><a href="">Refresh</a></small><small><a href="">View all</a></small>
+      <h4>Recomendados</h4>
     </div>
-    <!-- Who to Follow panel -->
     <div class="panel-content">
-      <!--Follow list -->
       <ol class="tweet-list">
-        <li class="tweet-card">
-          <div class="tweet-content">
-            <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
-            <div class="tweet-header">
-              <span class="fullname">
-            <strong>Jon Vadillo</strong>
-          </span>
-              <span class="username">@JonVadillo</span>
-            </div>
-
-            <button class="btn btn-follow">Follow</button>
-          </div>
-        </li>
-        <li class="tweet-card">
-          <div class="tweet-content">
-            <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
-            <div class="tweet-header">
-              <span class="fullname">
-            <strong>Jon Vadillo</strong>
-          </span>
-              <span class="username">@JonVadillo</span>
-            </div>
-
-            <button class="btn btn-follow">Follow</button>
-          </div>
-        </li>
-        <li class="tweet-card">
-            <div class="tweet-content">
-            <img class="tweet-card-avatar" src="https://pbs.twimg.com/profile_images/679974972278849537/bzzb-6H4_bigger.jpg" alt="">
-            <div class="tweet-header">
-              <span class="fullname">
-           <strong>Jon Vadillo</strong>
-          </span>
-              <span class="username">@JonVadillo</span>
-            </div>
-
-            <button class="btn btn-follow">Follow</button>
-          </div>
+        <li class="tweet-card" *ngFor="let usuario of recomendados">
+          <app-usuario-recomendado [usuario]="usuario" ></app-usuario-recomendado>
         </li>
       </ol>
     </div>

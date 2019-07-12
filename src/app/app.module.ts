@@ -7,6 +7,9 @@ import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { NavbarPerfilComponent } from './componentes/navbar-perfil/navbar-perfil.component';
 import { ColumnaPerfilComponent } from './componentes/columna-perfil/columna-perfil.component';
 import { ColumnaRecomendacionesComponent } from './componentes/columna-recomendaciones/columna-recomendaciones.component';
+import { ColumnaCentralComponent } from './componentes/columna-central/columna-central.component';
+import { TweetComponent } from './componentes/tweet/tweet.component';
+import { UsuarioRecomendadoComponent } from './componentes/usuario-recomendado/usuario-recomendado.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { ColumnaRecomendacionesComponent } from './componentes/columna-recomenda
     NavbarComponent,
     NavbarPerfilComponent,
     ColumnaPerfilComponent,
-    ColumnaRecomendacionesComponent
+    ColumnaRecomendacionesComponent,
+    ColumnaCentralComponent,
+    TweetComponent,
+    UsuarioRecomendadoComponent
   ],
   imports: [
     BrowserModule,
