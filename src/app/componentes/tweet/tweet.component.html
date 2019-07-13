@@ -1,4 +1,4 @@
-<div class="tweet-content pointer pointer">
+<div class="tweet-content">
   <div class="tweet-header">
     <span class="fullname">
       <strong>{{ tweet.nombre }}</strong>
@@ -9,18 +9,18 @@
   <a>
     <img class="tweet-card-avatar" [src]="tweet.imagen" alt="">
   </a>
-  <div class="tweet-text">
+  <div class="tweet-text pointer pointer">
     <p class="" lang="es" data-aria-label-part="0"> {{ tweet.texto }}</p>
   </div>
   <div class="tweet-footer">
-    <a class="tweet-footer-btn">
+    <a class="tweet-footer-btn" (click)="comentar(tweet)" >
       <i class="octicon octicon-comment" aria-hidden="true"></i><span> {{ tweet.comentarios }}</span>
     </a>
     <a class="tweet-footer-btn">
-      <i class="octicon octicon-sync green" aria-hidden="true"></i><span> {{ tweet.compartidos }}</span>
+      <i class="octicon octicon-sync green" (click)="compartir(tweet)" aria-hidden="true"></i><span> {{ tweet.compartidos }}</span>
     </a>
     <a class="tweet-footer-btn">
-      <i class="octicon octicon-heart red" aria-hidden="true"></i><span> {{ tweet.corazones }}</span>
+      <i class="octicon octicon-heart red" (click)="corazon(tweet)" aria-hidden="true"></i><span> {{ tweet.corazones }}</span>
     </a>
   </div>
 </div>

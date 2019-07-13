@@ -10,6 +10,12 @@ import { ColumnaRecomendacionesComponent } from './componentes/columna-recomenda
 import { ColumnaCentralComponent } from './componentes/columna-central/columna-central.component';
 import { TweetComponent } from './componentes/tweet/tweet.component';
 import { UsuarioRecomendadoComponent } from './componentes/usuario-recomendado/usuario-recomendado.component';
+import { ModalComponent } from './componentes/modal/modal.component';
+import { HomeComponent } from './componentes/home/home.component';
+import { MomentosComponent } from './componentes/momentos/momentos.component';
+import { NotificacionesComponent } from './componentes/notificaciones/notificaciones.component';
+import { MensajesComponent } from './componentes/mensajes/mensajes.component';
+import { PerfilComponent } from './componentes/perfil/perfil.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +26,13 @@ import { UsuarioRecomendadoComponent } from './componentes/usuario-recomendado/u
     ColumnaRecomendacionesComponent,
     ColumnaCentralComponent,
     TweetComponent,
-    UsuarioRecomendadoComponent
+    UsuarioRecomendadoComponent,
+    ModalComponent,
+    HomeComponent,
+    MomentosComponent,
+    NotificacionesComponent,
+    MensajesComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,

@@ -15,4 +15,15 @@ export class TweetComponent implements OnInit {
   ngOnInit() {
   }
 
+  comentar(tweet:ITweet){
+    console.log(tweet);
+  }
+
+  compartir(tweet:ITweet){
+    console.log(tweet);
+  }
+
+  corazon(tweet:ITweet){
+    console.log(tweet);
+  }
 }

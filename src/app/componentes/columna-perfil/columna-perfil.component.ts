@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+declare var $:any;
 
 @Component({
   selector: 'app-columna-perfil',
@@ -12,4 +13,10 @@ export class ColumnaPerfilComponent implements OnInit {
   ngOnInit() {
   }
 
+  twittear(){
+    console.log(arguments);
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    });    
+  }
 }
