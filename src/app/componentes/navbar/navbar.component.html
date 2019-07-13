@@ -6,16 +6,16 @@
   <div class="collapse navbar-collapse container">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#"><i class="octicon octicon-home" aria-hidden="true"></i> Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" routerLink="/home" href="#"><i class="octicon octicon-home" aria-hidden="true"></i> Home </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="octicon octicon-zap"></i> Momentos</a>
+        <a class="nav-link" routerLink="/momentos" href="#"><i class="octicon octicon-zap"></i> Momentos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="octicon octicon-bell"></i> Notificaciones</a>
+        <a class="nav-link" routerLink="/notificaciones" href="#"><i class="octicon octicon-bell"></i> Notificaciones</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="octicon octicon-inbox"></i> Mensajes</a>
+        <a class="nav-link" routerLink="mensajes" href="#"><i class="octicon octicon-inbox"></i> Mensajes</a>
       </li>
     </ul>
     <form class="navbar-form" role="search">
@@ -26,7 +26,9 @@
         </div>
       </div>
     </form>
-    <div class="btn btn-secondary btn-circle"></div>
+    <div class="btn btn-secondary btn-circle">
+      <a class="nav-link" routerLink="/perfil" href="#"></a>
+    </div>
     <button class="btn btn-search-bar" data-target="#myModal" data-toggle="modal" type="button" (click)="twittear()">Tweet</button>
   </div>
 </nav>
