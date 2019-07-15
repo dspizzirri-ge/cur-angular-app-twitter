@@ -1,20 +1,32 @@
 <div class="main-container">
 
-  <app-navbar-perfil></app-navbar-perfil>
-
-  <div class="container main-content">
+  <div class="container">
     <div class="row">
-      
-      <div class="col-4 profile-col">
-        <app-columna-perfil></app-columna-perfil>
+
+      <div class="col-3">
+        <app-tendencias></app-tendencias>
       </div>
-      
-      <div class="col-5">
-        <app-columna-central></app-columna-central>
+
+      <div class="col-6">
+
+        <form [formGroup]="tweetForm" (ngSubmit)="enviarTweet()">
+          <div class="tweet-box card text-center">
+            <div class="row card-body">
+              <div class="col-1 circle" [ngStyle]="{ 'background-color': '#cccccc' }"></div>
+              <textarea formControlName="tweet" name="tweet" class="col-9" type="text" maxlength="140"
+                placeholder="Que estas pensado?"></textarea>
+            </div>
+            <div class="card-footer text-muted">
+              <button type="submit" class="btn btn-primary"> Tweetear </button>
+              <button type="button" class="btn btn-danger"> Cancelar </button>
+            </div>
+          </div>
+        </form>
+        <app-tweets></app-tweets>
       </div>
-      
+
       <div class="col-3 right-col">
-        <app-columna-recomendaciones></app-columna-recomendaciones>
+        <app-recomendaciones></app-recomendaciones>
       </div>
     </div>
   </div>

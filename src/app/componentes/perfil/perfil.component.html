@@ -1,3 +1,32 @@
-<p>
-  perfil works!
-</p>
+<app-navbar-perfil [imagenFondo]="usuario.imagenFondo" [actividad]="usuario.actividad"></app-navbar-perfil>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4 profile-col">
+
+      <div class="profile-header">
+        <h3 class="profile-fullname"><a>{{ usuario.nombre }}</a></h3>
+        <h2 class="profile-element"><a>@{{ usuario.usuario }}</a></h2>
+        <a class="profile-element profile-website" hrerf=""><i
+            class="octicon octicon-link"></i>&nbsp;{{ usuario.web }}</a>
+        <a class="profile-element profile-website" hrerf=""><i
+            class="octicon octicon-location"></i>&nbsp;{{ usuario.ciudad }},{{ usuario.pais }}</a>
+        <h2 class="profile-element"><i class="octicon octicon-calendar"></i>Desde {{ usuario.desde }}</h2>
+        <button class="btn btn-search-bar tweet-to-btn" data-target="#myModal" data-toggle="modal" type="button"
+          (click)="twittear()">Tweet to Ramona Ponte Alegre</button>
+      </div>
+    </div>
+
+    <div class="col-8">
+      <a class="profile-element profile-website" hrerf=""><i class="octicon octicon-file-media"></i>156 Fotos y
+        videos</a>
+      <div class="pic-grid">
+        <div class="row">
+          <div class="col pic-col" *ngFor="let foto of usuario.multimedia">
+            <img [src]="foto" height="73px" class="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

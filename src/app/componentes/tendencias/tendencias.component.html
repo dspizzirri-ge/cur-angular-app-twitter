@@ -1,0 +1,15 @@
+<div class="content-panel">
+  <div class="panel-header text-center">
+    <h4>Tendencias</h4>
+  </div>
+  <div class="panel-content">
+    <ol class="tweet-list">
+      <li class="tweet-card" *ngFor="let tendencia of tendencias">
+        <div class="list-group-item">
+          <strong> <a>{{ tendencia.hashtag }}</a></strong>
+          <div> {{ tendencia.resumen }} </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</div>

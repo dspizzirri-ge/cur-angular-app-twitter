@@ -1,18 +1,22 @@
 <nav class="navbar navbar-expand-lg fixed-top">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+    data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+    aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse container">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/home" href="#"><i class="octicon octicon-home" aria-hidden="true"></i> Home </a>
+        <a class="nav-link" routerLink="/home" href="#"><i class="octicon octicon-home" aria-hidden="true"></i> Home
+        </a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="/momentos" href="#"><i class="octicon octicon-zap"></i> Momentos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/notificaciones" href="#"><i class="octicon octicon-bell"></i> Notificaciones</a>
+        <a class="nav-link" routerLink="/notificaciones" href="#"><i class="octicon octicon-bell"></i>
+          Notificaciones</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="mensajes" href="#"><i class="octicon octicon-inbox"></i> Mensajes</a>
@@ -20,15 +24,18 @@
     </ul>
     <form class="navbar-form" role="search">
       <div class="input-group">
-        <input type="text" class="form-control input-search" placeholder="Buscar Twitter" name="srch-term" id="srch-term">
+        <input type="text" class="form-control input-search" placeholder="Buscar Twitter" name="srch-term"
+          id="srch-term">
         <div class="input-group-btn">
-          <button class="btn btn-default btn-search" type="submit"><i class="octicon octicon-search navbar-search-icon"></i> Buscar </button>
+          <button class="btn btn-default btn-search" type="submit"><i
+              class="octicon octicon-search navbar-search-icon"></i> Buscar </button>
         </div>
       </div>
     </form>
     <div class="btn btn-secondary btn-circle">
       <a class="nav-link" routerLink="/perfil" href="#"></a>
     </div>
-    <button class="btn btn-search-bar" data-target="#myModal" data-toggle="modal" type="button" (click)="twittear()">Tweet</button>
+    <button class="btn btn-search-bar" data-target="#myModal" data-toggle="modal" type="button"
+      (click)="twittear()">Tweet</button>
   </div>
 </nav>

@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { NavbarPerfilComponent } from './componentes/navbar-perfil/navbar-perfil.component';
 import { ColumnaPerfilComponent } from './componentes/columna-perfil/columna-perfil.component';
-import { ColumnaRecomendacionesComponent } from './componentes/columna-recomendaciones/columna-recomendaciones.component';
-import { ColumnaCentralComponent } from './componentes/columna-central/columna-central.component';
+import { RecomendacionesComponent } from './componentes/recomendaciones/recomendaciones.component';
+import { TweetsComponent } from './componentes/tweets/tweets.component';
 import { TweetComponent } from './componentes/tweet/tweet.component';
 import { UsuarioRecomendadoComponent } from './componentes/usuario-recomendado/usuario-recomendado.component';
 import { ModalComponent } from './componentes/modal/modal.component';
@@ -16,6 +16,8 @@ import { MomentosComponent } from './componentes/momentos/momentos.component';
 import { NotificacionesComponent } from './componentes/notificaciones/notificaciones.component';
 import { MensajesComponent } from './componentes/mensajes/mensajes.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TendenciasComponent } from './componentes/tendencias/tendencias.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +25,8 @@ import { PerfilComponent } from './componentes/perfil/perfil.component';
     NavbarComponent,
     NavbarPerfilComponent,
     ColumnaPerfilComponent,
-    ColumnaRecomendacionesComponent,
-    ColumnaCentralComponent,
+    RecomendacionesComponent,
+    TweetsComponent,
     TweetComponent,
     UsuarioRecomendadoComponent,
     ModalComponent,
@@ -32,11 +34,13 @@ import { PerfilComponent } from './componentes/perfil/perfil.component';
     MomentosComponent,
     NotificacionesComponent,
     MensajesComponent,
-    PerfilComponent
+    PerfilComponent,
+    TendenciasComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

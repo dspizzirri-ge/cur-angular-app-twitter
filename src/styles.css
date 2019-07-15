@@ -1,4 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
 body {
     background-color: #e6ecf0;
     padding-top: 54px;
@@ -13,7 +12,13 @@ body {
       width: 1190px;
     }
   }
-  /* Top Navbar elements' styles */
+
+  @media screen and (min-width: 1600px) {
+    .container {
+      width: 1490px;
+    }
+  }
+  
   .navbar {
     background-color: #fff;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
@@ -41,6 +46,14 @@ body {
     color: #66757f;
   }
   
+  .circle{
+    margin: 5px;
+    border: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
   .btn-circle {
     border: 10px;
     border-radius: 50%;
@@ -72,14 +85,11 @@ body {
   .navbar-user-dropdown {
     margin-right: 15px;
   }
-  /* END: Top Navbar elements' styles */
   
   .profile-background {
     height: 320px;
-    background-image: url('./assets/pokemon2000.jpg');
   }
   
-  /* Main avatar */
   .avatar-container {
     bottom: -87px;
     left: 10px;
@@ -97,9 +107,7 @@ body {
     position: relative;
     width: 200px;
   }
-  /* END: Main avatar */
   
-  /* Stats Navbar elements' styles */
   .profile-stats {
     background-color: #fff;
     padding-top: 0;
@@ -143,11 +151,6 @@ body {
     font-weight: bold;
   }
   
-  /* END: Stats Navbar elements' styles */
-  
-  /* Main content elements' styles */
-  
-  /* Left column*/
   .profile-header {
     margin-top: 35px;
     padding-right: 15px;
@@ -178,12 +181,12 @@ body {
     margin-bottom: 16px;
     width:100%;
   }
-  /* END: Left column*/
   
-  /* Main column*/
-  .main-content {
+  .tweet-box{
+    margin: 20px 10px 0;
+    padding: 0;
   }
-  
+
   .tweet-list {
     list-style: none;
     margin: 8px 4px 0;
@@ -221,9 +224,7 @@ body {
   .tweet-footer-btn span {
     margin-left: 8px;
   }
-  /* END Main column*/
-  
-  /* Right column*/
+
   .pic-col {
     margin: 2px;
     padding: 2px;

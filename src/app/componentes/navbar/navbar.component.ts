@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+
+  backgroundImage: string = "url('data:image/jpeg;base64,')";
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  twittear() {
+
   }
 
 }
