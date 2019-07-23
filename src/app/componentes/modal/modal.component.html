@@ -1,22 +1,18 @@
 <div id="myModal" class="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="card text-center">
-        <div class="card-header">
-          Featured
+      <form [formGroup]="tweetForm" (ngSubmit)="enviarTweet()">
+        <div class="tweet-box card text-center">
+          <div class="row card-body">
+            <div class="col-1 circle" [ngStyle]="{ 'background-color': '#cccccc' }"></div>
+            <textarea formControlName="tweet" name="tweet" class="col-9" type="text" maxlength="140"
+              placeholder="Que estas pensado?"></textarea>
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-        <div class="card-footer text-muted">
-          2 days ago
-        </div>
-      </div>
+      </form>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="submit" class="btn btn-primary"> Tweetear </button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal"> Cancelar </button>
       </div>
     </div>
   </div>

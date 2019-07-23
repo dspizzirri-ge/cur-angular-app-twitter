@@ -24,6 +24,15 @@ export class UsuarioService {
     }
   }
 
+  enviarTweet(mensaje:string):Observable<any>{
+    if (environment.mocks) {
+      return of(true);
+    } else {
+      const fecha = (new Date()).getTime().toString(); 
+      return this.api.post('tweets', { mensaje, fecha, autor: {} });
+    }
+  }
+
   getTweetsAmigosYMios(): Observable<any> {
     if (environment.mocks) {
       return of(TWEETS_AMIGOS_Y_MIOS);

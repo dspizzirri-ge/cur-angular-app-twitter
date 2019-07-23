@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiEndpoint: "",
+  apiEndpoint: "http://localhost:4200/LAB-00077-twitter-0.0.1-SNAPSHOT/api/rest/",
   mocks: true
 };
 

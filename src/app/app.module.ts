@@ -18,6 +18,8 @@ import { MensajesComponent } from './componentes/mensajes/mensajes.component';
 import { PerfilComponent } from './componentes/perfil/perfil.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TendenciasComponent } from './componentes/tendencias/tendencias.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -35,12 +37,14 @@ import { TendenciasComponent } from './componentes/tendencias/tendencias.compone
     NotificacionesComponent,
     MensajesComponent,
     PerfilComponent,
-    TendenciasComponent
+    TendenciasComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
